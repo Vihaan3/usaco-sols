@@ -6,4 +6,4 @@
 ## USACO Silver Easy
 
 * [Painting the Barn](usaco-silver-easy/painting-the-barn.md)
-* [Page 2](usaco-silver-easy/page-2.md)
+* [Paired Up](usaco-silver-easy/paired-up.md)
