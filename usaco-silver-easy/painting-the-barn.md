@@ -1,5 +1,7 @@
 # Painting the Barn
 
+[https://usaco.org/index.php?page=viewproblem2\&cpid=919](https://usaco.org/index.php?page=viewproblem2\&cpid=919)
+
 ### Problem Solving
 
 I got the solution for this one pretty quickly as I was reading it.
