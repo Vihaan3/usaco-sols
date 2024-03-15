@@ -4,7 +4,7 @@
 
 ### Problem-Solving
 
-I got a weird partial solution within 10 minutes of reading the problem, but I couldn't figure out anything else for the next 10 minutes that I tried to think. I've now spent another 20 minutes trying to understand the (annoyingly concise) official solution, and I've still gotten nowhere.
+I got a weird partial solution within 10 minutes of reading the problem, but I couldn't figure out anything else for the next 10 minutes that I tried to think. I then spent over 1 hour trying to understand the solution, and now I've finally got it, though I don't think I can implement it just yet. I'll keep it in my to-dos for a future time and move on to a new problem.&#x20;
 
 ### Implementation
 
