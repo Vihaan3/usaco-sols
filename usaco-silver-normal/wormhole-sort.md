@@ -1,6 +1,6 @@
 # Wormhole Sort
 
-[https://usaco.org/index.php?page=viewproblem2\&cpid=992](https://usaco.org/index.php?page=viewproblem2\&cpid=992)
+{% embed url="https://usaco.org/index.php?page=viewproblem2&cpid=992" %}
 
 ### Problem-Solving
 

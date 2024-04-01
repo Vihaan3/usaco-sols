@@ -1,6 +1,6 @@
 # Painting the Barn
 
-[https://usaco.org/index.php?page=viewproblem2\&cpid=919](https://usaco.org/index.php?page=viewproblem2\&cpid=919)
+{% embed url="https://usaco.org/index.php?page=viewproblem2&cpid=919" %}
 
 ### Problem Solving
 

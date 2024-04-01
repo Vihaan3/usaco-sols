@@ -1,6 +1,6 @@
 # Paired Up
 
-[https://usaco.org/index.php?page=viewproblem2\&cpid=738](https://usaco.org/index.php?page=viewproblem2\&cpid=738)
+{% embed url="https://usaco.org/index.php?page=viewproblem2&cpid=738" %}
 
 ### Problem Solving
 
