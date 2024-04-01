@@ -8,6 +8,7 @@
 * [Painting the Barn](usaco-silver-easy/painting-the-barn.md)
 * [Paired Up](usaco-silver-easy/paired-up.md)
 * [Mountain View](usaco-silver-easy/mountain-view.md)
+* [Convention 2](usaco-silver-easy/convention-2.md)
 
 ## USACO Silver Normal
 
