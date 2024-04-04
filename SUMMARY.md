@@ -10,3 +10,4 @@
 * [Mountain View](usaco-silver/mountain-view.md)
 * [Convention 2](usaco-silver/convention-2.md)
 * [Wormhole Sort](usaco-silver/wormhole-sort.md)
+* [Target Practice](usaco-silver/target-practice.md)
