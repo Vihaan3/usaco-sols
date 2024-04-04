@@ -3,13 +3,10 @@
 * [Home](README.md)
 * [Problem To-Do List](problem-to-do-list.md)
 
-## USACO Silver Easy
+## USACO Silver
 
-* [Painting the Barn](usaco-silver-easy/painting-the-barn.md)
-* [Paired Up](usaco-silver-easy/paired-up.md)
-* [Mountain View](usaco-silver-easy/mountain-view.md)
-* [Convention 2](usaco-silver-easy/convention-2.md)
-
-## USACO Silver Normal
-
-* [Wormhole Sort](usaco-silver-normal/wormhole-sort.md)
+* [Painting the Barn](usaco-silver/painting-the-barn.md)
+* [Paired Up](usaco-silver/paired-up.md)
+* [Mountain View](usaco-silver/mountain-view.md)
+* [Convention 2](usaco-silver/convention-2.md)
+* [Wormhole Sort](usaco-silver/wormhole-sort.md)
