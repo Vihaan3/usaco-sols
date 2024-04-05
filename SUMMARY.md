@@ -11,3 +11,4 @@
 * [Wormhole Sort](usaco-silver/wormhole-sort.md)
 * [Convention 2](usaco-silver/convention-2.md)
 * [Target Practice](usaco-silver/target-practice.md)
+* [Bovine Acrobatics](usaco-silver/bovine-acrobatics.md)
