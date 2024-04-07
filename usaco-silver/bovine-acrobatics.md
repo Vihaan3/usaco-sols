@@ -21,6 +21,8 @@ My new problem-solving strategy will be:
 
 ### Implementation
 
+Pseudo-code
+
 ```
 // Some code
 if the current cow can be on any tower, it can go on the tower with the heaviest cow on top
