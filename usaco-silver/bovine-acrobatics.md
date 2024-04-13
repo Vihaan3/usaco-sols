@@ -24,7 +24,6 @@ My new problem-solving strategy will be:
 Pseudo-code
 
 ```
-// Some code
 if the current cow can be on any tower, it can go on the tower with the heaviest cow on top
 if you sort the cows and the towers (both by decreasing weight), then what you can do is, on each step, see if you can put the current cow on the first tower (if it is light enough that the difference is greater than or equal to K). if it can, putit on the tower and put that tower at the end. else turn that cow into a tower and put it at the end
 
