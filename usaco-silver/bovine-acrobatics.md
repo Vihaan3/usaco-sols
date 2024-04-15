@@ -21,7 +21,7 @@ My new problem-solving strategy will be:
 
 ### Implementation
 
-Pseudo-code
+Pseudo-code and implementation for 50% solution&#x20;
 
 ```
 if the current cow can be on any tower, it can go on the tower with the heaviest cow on top
@@ -45,5 +45,92 @@ for each pair in the vec of pairs
 				num++
 
 std::cout << num;
+
+```
+
+```cpp
+#include <iostream>
+#include <vector>
+#include <algorithm>
+
+int main ()
+{
+	int n, m, k;
+	std::cin >> n >> m >> k;
+
+	std::vector <std::pair <int, int>> vec (n);
+	for (int i = 0; i < n; i++)
+	{
+		std::cin >> vec[i].first >> vec[i].second;
+	}
+	std::sort(vec.begin(), vec.end(), std::greater<std::pair<int, int>>());
+	std::vector <std::vector <int>> towers;
+	towers.push_back(std::vector <int> {vec[0].first});
+	vec[0].second--;
+	int num = 0;
+	for (auto &v : vec)
+	{
+		while (v.second > 0)
+		{
+			bool enter = false;
+			if (towers[0][towers[0].size() - 1] - v.first >= k)
+			{
+				enter = true;
+				towers[0].push_back(v.first);
+				towers.push_back(towers[0]);
+				towers.erase(towers.begin());
+				v.second--;
+				num++;
+			}
+			else
+			{
+				if (towers.size() < m)
+				{
+					enter = true;
+					towers.push_back(std::vector<int> {v.first});
+					v.second--;
+					num++;
+				}
+			}
+			if (!enter)
+				break;
+		}	
+	}
+
+	std::cout << num + 1;
+}
+```
+
+Full Solution
+
+```python
+from collections import deque
+N, M, K = map(int, input().split())
+ 
+pairs = []
+for _ in range(N):
+	w, a = map(int, input().split())
+	pairs.append([w, a])
+pairs.sort(reverse = True)
+ 
+towers = deque()
+towers.append([1e100, M])
+answer = 0
+for w, a in pairs:
+	remaining = a
+	while len(towers) > 0 and remaining > 0 and w + K <= towers[0][0]:
+		if towers[0][1] > remaining:
+			towers[0][1] -= remaining
+			remaining = 0
+		else:
+			remaining -= towers[0][1]
+			towers.popleft()
+	cnt = a - remaining
+	if cnt > 0:
+		towers.append([w, cnt])
+		answer += cnt
+	
+ 
+print(answer)
 
 ```
