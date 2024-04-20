@@ -12,3 +12,4 @@
 * [Convention 2](usaco-silver/convention-2.md)
 * [Target Practice](usaco-silver/target-practice.md)
 * [Bovine Acrobatics](usaco-silver/bovine-acrobatics.md)
+* [Cycle Correspondence](usaco-silver/cycle-correspondence.md)
