@@ -4,7 +4,83 @@
 
 I completely misunderstood the problem statement, and ended up spending half an hour implementing the wrong thing (and it was a very inefficient solution as well).&#x20;
 
+Real Solution
+
+```cpp
+#include <iostream>
+#include <vector>
+#include <set>
+#include <algorithm>
+#include <unordered_map>
+#define umap std::unordered_map
+
+int solve(std::vector <int> a, std::vector<int> b)
+{
+	umap <int, int> b1;
+	for (int i = 0; i < b.size(); i++)
+	{
+		b1[b[i]] = i;
+	}
+
+	std::vector<int> counter(a.size());
+	for (int i = 0; i < a.size(); i++)
+	{
+		auto it = b1.find(a[i]);
+		if (it != b1.end())
+		{
+			int j = it->second;
+			if (i >= j)
+			{
+				counter[i - j]++;
+			}
+			else
+			{
+				auto len = a.size();
+				counter[i - j + len]++;
+			}
+		}
+	}
+
+	int max = 0;
+
+	for (auto count : counter)
+	{
+		max = std::max(max, count);
+	}
+	return max;
+}
+
+int main()
+{
+	int n, k;
+	std::cin >> n >> k;
+	std::set<int> setter;
+	std::vector<int> a(k);
+	std::vector<int> b(k);
+
+	for (int i = 0; i < k; i++)
+	{
+		std::cin >> a[i];
+		setter.insert(a[i]);
+	}
+	for (int i = 0; i < k; i++)
+	{
+		std::cin >> b[i];
+		setter.insert(b[i]);
+	}
+
+	auto outside_count = n - setter.size();
+	auto b1 = b;
+	std::reverse(b1.begin(), b1.end());
+	//THIS MIGHT BE THE ISSUE. B1 MIGHT BE REFERENCING THE SAME THING
+	std::cout << outside_count + std::max(solve(a, b), solve(a, b1));
+}
+
 ```
+
+Stupid Solution
+
+```cpp
 #include <iostream>
 #include <vector>
 #include <algorithm>
