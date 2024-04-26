@@ -4,6 +4,13 @@
 
 I completely misunderstood the problem statement, and ended up spending half an hour implementing the wrong thing (and it was a very inefficient solution as well).&#x20;
 
+I learned a lot of new problem-solving/implementation tricks from this problem.
+
+1. Using .find with an unordered\_map is O(1). Stupidly, I completely forgot that they're stored using hash tables for O(1) lookup.
+2. Gained a little bit of intuition for more instances when you would want to use a set.&#x20;
+
+### Implementation
+
 Real Solution
 
 ```cpp
@@ -72,7 +79,6 @@ int main()
 	auto outside_count = n - setter.size();
 	auto b1 = b;
 	std::reverse(b1.begin(), b1.end());
-	//THIS MIGHT BE THE ISSUE. B1 MIGHT BE REFERENCING THE SAME THING
 	std::cout << outside_count + std::max(solve(a, b), solve(a, b1));
 }
 
