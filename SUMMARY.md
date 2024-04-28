@@ -13,3 +13,4 @@
 * [Target Practice](usaco-silver/target-practice.md)
 * [Bovine Acrobatics](usaco-silver/bovine-acrobatics.md)
 * [Cycle Correspondence](usaco-silver/cycle-correspondence.md)
+* [Cowmpetency](usaco-silver/cowmpetency.md)
