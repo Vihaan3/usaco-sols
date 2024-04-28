@@ -4,9 +4,11 @@
 
 My original solution was actually pretty on-target for this one, and just missed by a bit. I got stumped by making sure that changes made to make one constraint true wouldn't disrupt another pair, but I didn't even think about the fact that I could just use a prefix-sum-like idea to store the `hi`s for every i.&#x20;
 
+In the future, I probably want to start with a brute-force solution and gradually make it more efficient.
+
 {% code overflow="wrap" %}
 ```
-My Pseudo-Code
+My Original Pseudo-Code
 
 take in input
 make a copy of the original c array, make all changeable values 1
