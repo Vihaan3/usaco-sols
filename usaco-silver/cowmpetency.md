@@ -63,3 +63,5 @@ check that each element is at most C
 print all the elements in c
 ```
 {% endcode %}
+
+This pseudo-code is robust enough that I'll skip the implementation.
