@@ -47,6 +47,6 @@ Since it's a tree, of course you can just figure out the number of traversals th
 Take in input as a vector of potions and an adjacency list of rooms
 Loop through the tree and caculate the number of leaves
 Loop through the number of traversals:
-    
+    asdfasdfasdf
     
 ```
