@@ -38,3 +38,14 @@ while (!q.empty())
 ### Real Solution
 
 So it turns out that I'm insanely stupid.&#x20;
+
+Since it's a tree, of course you can just figure out the number of traversals through the number of leaves.&#x20;
+
+```
+// O(N^2) Solution
+
+Take in input as a vector of potions and an adjacency list of rooms
+Loop through the tree and caculate the number of leaves
+Loop through the number of traversals:
+    
+```
