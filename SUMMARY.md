@@ -14,4 +14,4 @@
 * [Bovine Acrobatics](usaco-silver/bovine-acrobatics.md)
 * [Cycle Correspondence](usaco-silver/cycle-correspondence.md)
 * [Cowmpetency](usaco-silver/cowmpetency.md)
-* [Potion Game](usaco-silver/potion-game.md)
+* [Potion Farming](usaco-silver/potion-farming.md)

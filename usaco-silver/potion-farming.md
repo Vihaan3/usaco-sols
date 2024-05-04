@@ -1,4 +1,6 @@
-# Potion Game
+# Potion Farming
+
+{% embed url="https://usaco.org/index.php?page=viewproblem2&cpid=1375" %}
 
 ### First solution:
 
