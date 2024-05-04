@@ -6,7 +6,7 @@
 
 Take in tree input BFS on the tree This dfs needs to return a vector of vectors with the traversals you need. Vector of vectors of size n: potion\_vec Vector of vectors of size (min\_traversals): traversal\_vec2 For each traversal: For each element in each traversal: in potion\_vec, push\_back the index of the traversal it's in in traversal\_vec, push\_back the index of the element for (potion in potions) if it has traversals: choose the traversal that has it that has the least other potions potions++; else choose the traversal that has the least potions for the traversal chosen, go thru traversal\_vec and delete it from everything in potion\_vec
 
-// BFS Implementation
+BFS Implementation
 
 ```
 // Adjacency list representation of tree
@@ -34,3 +34,7 @@ while (!q.empty())
 	index++;
 }
 ```
+
+### Real Solution
+
+So it turns out that I'm insanely stupid.&#x20;
