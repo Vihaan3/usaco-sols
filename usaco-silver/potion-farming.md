@@ -4,7 +4,20 @@
 
 ### First solution:
 
-Take in tree input BFS on the tree This dfs needs to return a vector of vectors with the traversals you need. Vector of vectors of size n: potion\_vec Vector of vectors of size (min\_traversals): traversal\_vec2 For each traversal: For each element in each traversal: in potion\_vec, push\_back the index of the traversal it's in in traversal\_vec, push\_back the index of the element for (potion in potions) if it has traversals: choose the traversal that has it that has the least other potions potions++; else choose the traversal that has the least potions for the traversal chosen, go thru traversal\_vec and delete it from everything in potion\_vec
+```
+Take in tree input 
+BFS on the tree 
+This BFS needs to return a vector of vectors with the traversals you need. 
+Vector of vectors of size n: potion_vec 
+Vector of vectors of size (min_traversals): traversal_vec2 
+For each traversal: 
+    For each element in each traversal: 
+         in potion_vec, push_back the index of the traversal it's in in traversal_vec,       
+         push_back the index of the element     
+for (potion in potions) 
+    if it has traversals: choose the traversal that has it that has the least other potions potions++; 
+    else choose the traversal that has the least potions for the traversal chosen, go thru traversal_vec and delete it from everything in potion_vec
+```
 
 BFS Implementation
 
