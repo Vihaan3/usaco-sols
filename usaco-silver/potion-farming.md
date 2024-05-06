@@ -42,10 +42,15 @@ So it turns out that I'm insanely stupid.&#x20;
 Since it's a tree, of course you can just figure out the number of traversals through the number of leaves.&#x20;
 
 ```
-// O(N^2) Solution
-
+O (n^2 solution)
 Take in input as a vector of potions and an adjacency list of rooms
-Loop through the tree and caculate the number of leaves
+Create a vector that indexes on the room numbers the potions will appear in: appear
+Create a vector that keeps track of parent nodes
+Loop through the tree and calculate the number of leaves
 Loop through the number of traversals:
-    
+	Increment appear[potions[number]]
+Run a dfs that keeps track of the parent nodes and skips returns 
+Loop through all leaf nodes:
+	Backtrack the current traversal and add 1 to the count if you find a room where there is a potion
+
 ```
