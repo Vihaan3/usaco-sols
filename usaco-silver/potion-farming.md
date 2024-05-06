@@ -41,6 +41,8 @@ So it turns out that I'm insanely stupid.&#x20;
 
 Since it's a tree, of course you can just figure out the number of traversals through the number of leaves.&#x20;
 
+The solution to the first subtask is to just greedily pair each leaf with it's closest potion-spawning ancestor.&#x20;
+
 ```
 O (n^2 solution)
 Take in input as a vector of potions and an adjacency list of rooms
