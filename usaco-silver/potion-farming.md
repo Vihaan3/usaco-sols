@@ -57,7 +57,7 @@ Since it's a tree, of course you can just figure out the number of traversals th
 The solution to the first subtask is to just greedily pair each leaf with it's closest potion-spawning ancestor.&#x20;
 
 ```
-O (n^2 solution)
+// O (N^2) Solution
 Take in input as a vector of potions and an adjacency list of rooms
 Create a vector that indexes on the room numbers the potions will appear in: appear
 Create a vector that keeps track of parent nodes
@@ -68,4 +68,16 @@ Run a dfs that keeps track of the parent nodes and skips returns
 Loop through all leaf nodes:
 	Backtrack the current traversal and add 1 to the count if you find a room where there is a potion
 
+```
+
+```
+// O (N) Solution
+C(i) = number of leaves that node i is an ancestor of.
+P(i) = number of potions collected by all the paths that go through i.
+Pot[i] = number of potions that spawn at node i
+
+Recursively build the solution from the leaves up to the root, using the backwards part of DFS
+The value of P(i) is the sum of the values of P(c) for all children of i.
+If [sum of P(c)] < C(i) for the current node i, that means that there are some unpaired leaves. Any potions found at node i are the closest potions, so we can pair them. 
+If [sum of P(c)] = C(i) for the current node i, that means that all leaves have been paired with another leaf. 
 ```
