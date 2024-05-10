@@ -15,3 +15,4 @@
 * [Cycle Correspondence](usaco-silver/cycle-correspondence.md)
 * [Cowmpetency](usaco-silver/cowmpetency.md)
 * [Potion Farming](usaco-silver/potion-farming.md)
+* [Cowlendar](usaco-silver/cowlendar.md)
