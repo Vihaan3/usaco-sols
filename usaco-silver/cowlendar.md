@@ -1,5 +1,7 @@
 # Cowlendar
 
+{% embed url="https://usaco.org/index.php?page=viewproblem2&cpid=1376" %}
+
 This problem was subtly tricky. I was insanely confused at how one would even begin tackling the problem because I was taking a naive approach to time complexity analysis. &#x20;
 
 ```cpp

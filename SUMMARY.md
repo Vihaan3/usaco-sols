@@ -16,3 +16,4 @@
 * [Cowmpetency](usaco-silver/cowmpetency.md)
 * [Potion Farming](usaco-silver/potion-farming.md)
 * [Cowlendar](usaco-silver/cowlendar.md)
+* [Target Practice 2](usaco-silver/target-practice-2.md)
