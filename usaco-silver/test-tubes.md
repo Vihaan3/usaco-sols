@@ -35,3 +35,105 @@ Compress runs of the same number at each step
 4. Next, pour from the other tube until its string has length one.
 5. Finally, pour from the beaker into one of the tubes.
 ```
+
+<pre><code><strong>// Elaborated psuedo-code
+</strong><strong>std::vector&#x3C;std::pair&#x3C;int, int>> steps; -> keeps track of all movements
+</strong>
+pour (pourer, pouree, int num1, num2)
+{
+	steps.push_back(std::make_pair(num1, num2));
+	if (pourer[pourer.size()-1] == pouree[pourer.size()-1])
+		delete the last element of pourer
+	else
+		pouree.push_back(pourer[pourer.size() - 1]);
+		delete the last element of pourer
+	
+}
+
+
+solve(tube1, tube2, int p)
+{
+	tube3 = "";
+	// Compress runs
+	temp1 = ""
+	temp2 = ""
+	loop through tube1:
+		if current character != previous character
+			add to temp1
+	loop through tube2:
+		if current character != previous character
+			add to temp2
+	tube1 = temp1;
+	tube2 = temp2;
+	if (the last characters of tube1 and tube2 are equal)
+	{
+		if (tube1 has length > 1)
+		{
+			pour into tube 2
+		}
+		else
+		{
+			pour into tube 1
+		}
+	}
+	if (both tube1 and tube2 have length 1)
+	{
+		std::cout &#x3C;&#x3C; steps.size() &#x3C;&#x3C; std::endl;
+		if (p != 1)
+		{
+			print the steps
+		}
+		end;
+	}
+	else
+	{
+		if (tube1 has length > 1)
+		{
+			pour tube 1 into tube 3
+		}
+		else if (tube2 has lenght > 1)
+		{
+			pour tube 2 into tube 3
+		}
+	}
+	if (tube1[0] != tube3[0])
+	{
+		while (tube1.size() > 1)
+		{
+			pour into the tube where the top character matches that of tube1
+		}
+		
+		while (tube2.size() > 1)
+		{
+			pour into the tube where the top character matches that of tube2
+		}
+	}
+	else if (tube2[0] != tube3[0])
+	{
+		ditto 
+	}
+	
+	if (tube1 == tube3)
+	{
+		pour tube3 into tube1
+	}
+	
+	else
+	{
+		pour tube3 into tube2
+	}
+		
+}
+
+solver()
+{
+	take in n and p
+	take in input for the tubes as strings
+	solve (tube1, tube2, p)
+}
+
+
+std::cin >> T
+while (T--)
+
+</code></pre>
