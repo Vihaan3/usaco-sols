@@ -33,7 +33,6 @@ As you're going, keep checking whether the current sequence would work if you pr
 If it can't work, you can immediately break out
 
 Full solution:
-
-
+Subtask 2 + Pre-compute a difference array with the best case scenario
 ```
 {% endcode %}
