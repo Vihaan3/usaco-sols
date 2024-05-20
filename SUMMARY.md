@@ -18,3 +18,4 @@
 * [Cowlendar](usaco-silver/cowlendar.md)
 * [Target Practice 2](usaco-silver/target-practice-2.md)
 * [Test Tubes](usaco-silver/test-tubes.md)
+* [Moorbles](usaco-silver/moorbles.md)
