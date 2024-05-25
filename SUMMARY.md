@@ -20,3 +20,4 @@
 * [Test Tubes](usaco-silver/test-tubes.md)
 * [Moorbles](usaco-silver/moorbles.md)
 * [Bessie's Interview](usaco-silver/bessies-interview.md)
+* [Painting Fence Posts](usaco-silver/painting-fence-posts.md)
