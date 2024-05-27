@@ -4,6 +4,8 @@ description: A come-back-to-later list.
 
 # Problem To-Do List
 
+* Implement Painting Fence Posts
+* Implement Winning Gene
 * Implement Bessie's Interview
 * Implement Moorbles.&#x20;
 * Implement Test Tubes
