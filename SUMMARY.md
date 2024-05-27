@@ -1,7 +1,7 @@
 # Table of contents
 
 * [Home](README.md)
-* [Problem To-Do List](problem-to-do-list.md)
+* [To-Do](to-do.md)
 
 ## USACO Silver
 
