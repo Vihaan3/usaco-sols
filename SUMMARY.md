@@ -22,3 +22,4 @@
 * [Bessie's Interview](usaco-silver/bessies-interview.md)
 * [Painting Fence Posts](usaco-silver/painting-fence-posts.md)
 * [Winning Gene](usaco-silver/winning-gene.md)
+* [Barn Tree](usaco-silver/barn-tree.md)
