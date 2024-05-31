@@ -2,7 +2,10 @@
 
 {% embed url="https://usaco.org/index.php?page=viewproblem2&cpid=1254" %}
 
+#### Attempt 1: Failed all but the first test case
+
 ```
+// Initial Pseudo-Code
 dfs 
 	Keep dfs-ing until you reach a node that is less than 0
 
@@ -39,4 +42,112 @@ Loop through over:
 	ship(og_barn, track, bales[og_barn])
 	
 Print output
+```
+
+```cpp
+// Code implementing that pseudo-code
+#include <iostream>
+#include <vector>
+
+std::vector <std::vector<int>> output;
+std::vector <int> bales;
+std::vector <std::vector<int>> adj;
+std::vector <int> over;
+
+int num = 0;
+int tracker = 0;
+int min = 2147483647;
+void dfs(int j)
+{
+	if (bales[j] < 0)
+	{
+		tracker = j;
+		return;
+	}
+	if (num > min)
+	{
+		return;
+	}
+
+	for (auto u : adj[j])
+	{
+		num++;
+		dfs(u);
+	}
+}
+
+void ship(int origin, int dest, int amount)
+{
+	bales[origin] = 0;
+	bales[dest] += amount;
+	if (bales[dest] > 0)
+	{
+		over.push_back(dest);
+	}
+	std::vector<int> rand = { origin+1, dest+1, amount };
+	output.push_back(rand);
+}
+
+int main()
+{
+	int n;
+	std::cin >> n;
+	bales = std::vector<int>(n);
+	adj = std::vector<std::vector<int>>(n);
+	int average = 0;
+	for (int i = 0; i < n; i++)
+	{
+		std::cin >> bales[i];
+		average += bales[i];
+	}
+	average /= n;
+	for (int i = 0; i < n - 1; i++)
+	{
+		int a, b;
+		std::cin >> a >> b;
+		a--;
+		b--;
+		adj[a].push_back(b);
+		adj[b].push_back(a);
+	}
+	for (int i = 0; i < n; i++)
+	{
+		bales[i] -= average;
+		if (bales[i] > 0)
+		{
+			over.push_back(i);
+		}
+	}
+
+	for (int k = 0; k < over.size(); k++)
+	{
+		int i = over[k];
+		if (adj[i].size() == 1)
+		{
+			ship(i, adj[i][0], bales[i]);
+			continue;
+		}
+		int track = 0;
+		for (int j = 0; j < adj[i].size(); j++)
+		{
+			int l = adj[i][j];
+			dfs(l);
+			if (num < min)
+			{
+				min = num;
+				track = tracker;
+			}
+			num = 0;
+			tracker = 0;
+		}
+		ship(i, track, bales[i]);
+	}
+
+	std::cout << output.size() << std::endl;
+	for (auto out : output)
+	{
+		std::cout << out[0] << " " << out[1] << " " << out[2] << std::endl;
+	}
+
+}
 ```
