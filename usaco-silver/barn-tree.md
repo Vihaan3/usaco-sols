@@ -18,8 +18,6 @@ ship(origin, dest, amount)
 		add it to over
 	push_back origin, dest, amount to output
 	
-
-Fleshed out
 Pre-processing:
 	Input:
 		Take in # of bales input as a vector: bales
@@ -57,6 +55,8 @@ std::vector <int> over;
 int num = 0;
 int tracker = 0;
 int min = 2147483647;
+std::vector<bool> visited;
+
 void dfs(int j)
 {
 	if (bales[j] < 0)
@@ -64,15 +64,23 @@ void dfs(int j)
 		tracker = j;
 		return;
 	}
-	if (num > min)
+	if (num > min || visited[j])
 	{
 		return;
 	}
-
+	visited[j] = true;
 	for (auto u : adj[j])
 	{
 		num++;
 		dfs(u);
+	}
+}
+
+void reset_visited()
+{
+	for (int i = 0; i < visited.size(); i++)
+	{
+		visited[i] = false; 
 	}
 }
 
@@ -84,7 +92,7 @@ void ship(int origin, int dest, int amount)
 	{
 		over.push_back(dest);
 	}
-	std::vector<int> rand = { origin+1, dest+1, amount };
+	std::vector<int> rand = { origin + 1, dest + 1, amount };
 	output.push_back(rand);
 }
 
@@ -94,6 +102,7 @@ int main()
 	std::cin >> n;
 	bales = std::vector<int>(n);
 	adj = std::vector<std::vector<int>>(n);
+	visited = std::vector<bool>(n);
 	int average = 0;
 	for (int i = 0; i < n; i++)
 	{
@@ -139,6 +148,7 @@ int main()
 			}
 			num = 0;
 			tracker = 0;
+			reset_visited();
 		}
 		ship(i, track, bales[i]);
 	}
@@ -150,4 +160,14 @@ int main()
 	}
 
 }
+```
+
+**Attempt 2: Re-implementing the official pseudo-code**
+
+```
+Overview
+Take in input, make adjacency list, process by average
+Recursively for each node in the tree find the sum of the subtree from that node
+Recurse down the tree. Move values from all positive nodes in the subtree to the root node
+Recurse down the tree. Move values from the root to all negative values
 ```
