@@ -5,6 +5,7 @@ description: Vaguely in order
 # To-Do
 
 * Solve and implement every Silver problem from the USACO 2022-2023 season
+  * Come back to Barn Tree SOON
 * Come back to the Silver problems from the USACO 2023-2024 season
   * Brain solve all of them
   * Implement the hardest ones
