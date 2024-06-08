@@ -23,3 +23,4 @@
 * [Painting Fence Posts](usaco-silver/painting-fence-posts.md)
 * [Winning Gene](usaco-silver/winning-gene.md)
 * [Barn Tree](usaco-silver/barn-tree.md)
+* [Circular Barn](usaco-silver/circular-barn.md)
