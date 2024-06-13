@@ -162,7 +162,7 @@ int main()
 }
 ```
 
-**Attempt 2: Re-implementing the official pseudo-code**
+**Attempt 2: Re-implementing the official pseudo-code from scratch**
 
 ```
 Overview
@@ -170,4 +170,102 @@ Take in input, make adjacency list, process by average
 Recursively for each node in the tree find the sum of the subtree from that node
 Recurse down the tree. Move values from all positive nodes in the subtree to the root node
 Recurse down the tree. Move values from the root to all negative values
+```
+
+```cpp
+#include <vector>
+#include <iostream>
+
+std::vector<long long> bales;
+std::vector<std::vector<long long>> adj;
+std::vector<long long> subtree_sum; 
+std::vector <std::vector<long long>> output;
+
+
+void subtree(long long j, long long par)
+{
+	for (auto u : adj[j])
+	{
+		if (u != par)
+		{
+			subtree(u, j);
+			subtree_sum[j] += subtree_sum[u];
+
+		}
+
+	}
+}
+void ship(long long origin, long long dest, long long amount)
+{
+	std::vector<long long> temp = { origin+1, dest+1, amount };
+	output.push_back(temp);
+}
+
+void mover(long long j, long long par)
+{
+	for (auto u : adj[j])
+	{
+		if (u != par)
+		{
+			if (subtree_sum[u] >= 0)
+			{
+				mover(u, j);
+			}
+
+			if (subtree_sum[u] > 0)
+			{
+				ship(u, j, subtree_sum[u]);
+			}
+
+		}
+	}
+
+	for (auto u : adj[j])
+	{
+		if (u != par)
+		{
+			if (subtree_sum[u] < 0)
+			{
+				ship(j, u, -subtree_sum[u]);
+				mover(u, j);
+			}
+		}
+	}
+}
+
+int main()
+{
+	long long n;
+	std::cin >> n;
+	bales = std::vector<long long>(n);
+	adj = std::vector<std::vector<long long>>(n);
+	long long average = 0;
+	for (long long i = 0; i < n; i++)
+	{
+		std::cin >> bales[i];
+		average += bales[i];
+	}
+	average /= n;
+	for (long long i = 0; i < n - 1; i++)
+	{
+		long long a, b;
+		std::cin >> a >> b;
+		a--;
+		b--;
+		adj[a].push_back(b);
+		adj[b].push_back(a);
+	}
+	for (long long i = 0; i < n; i++)
+	{
+		bales[i] -= average;
+	}
+	subtree_sum = bales;
+	subtree(0, 0);
+	mover(0, 0);
+	std::cout << output.size() << std::endl;
+	for (auto out : output)
+	{
+		std::cout << out[0] << " " << out[1] << " " << out[2] << std::endl;
+	}
+}
 ```
