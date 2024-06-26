@@ -24,3 +24,4 @@
 * [Winning Gene](usaco-silver/winning-gene.md)
 * [Barn Tree](usaco-silver/barn-tree.md)
 * [Circular Barn](usaco-silver/circular-barn.md)
+* [Range Reconstruction](usaco-silver/range-reconstruction.md)
