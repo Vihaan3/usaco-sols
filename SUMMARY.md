@@ -27,3 +27,4 @@
 * [Range Reconstruction](usaco-silver/range-reconstruction.md)
 * [Find and Replace](usaco-silver/find-and-replace.md)
 * [Following Directions](usaco-silver/following-directions.md)
+* [Moo Route](usaco-silver/moo-route.md)
