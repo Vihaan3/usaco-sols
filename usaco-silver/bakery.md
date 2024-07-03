@@ -10,3 +10,4 @@ Steps to solving:
     * &#x20;both _c_ and _m_ need to be between 1 and their _C, M_ respectively
     * &#x20;_c_ + _m_ = _C_ + _M - p_
     * The values _c_ and _m_ should satisfy all of Bessie's friends&#x20;
+  * To pass all test cases, the hardest part is to find whether there are _c_s and _m_s that satisfy the constraints for a given _p_ without brute forcing over all possible values.&#x20;
