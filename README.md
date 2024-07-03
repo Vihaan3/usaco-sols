@@ -4,7 +4,7 @@ These are my USACO notes from 3/10/2024 onwards.&#x20;
 
 To speed up my acquisition of competitive programming skills, I want to start documenting my notes for each problem I come across and build intuition for problem-solving techniques. I also want to do my best to take away an improvement from each problem I do.&#x20;
 
-These are completely inward-facing, and serves as an accountability measure.
+These are completely inward-facing, and serves as an accountability measure to keep good documentation of the problems I do. A lot of the implementations will be me playing around with the official solution to understand why it works/re-implementing the official solution after reading it.&#x20;
 
 Practice Approach:&#x20;
 
