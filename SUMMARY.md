@@ -29,3 +29,4 @@
 * [Following Directions](usaco-silver/following-directions.md)
 * [Moo Route](usaco-silver/moo-route.md)
 * [Bakery](usaco-silver/bakery.md)
+* [Cow-libi](usaco-silver/cow-libi.md)
