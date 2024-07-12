@@ -30,3 +30,4 @@
 * [Moo Route](usaco-silver/moo-route.md)
 * [Bakery](usaco-silver/bakery.md)
 * [Cow-libi](usaco-silver/cow-libi.md)
+* [Moo Route](usaco-silver/moo-route-1.md)
