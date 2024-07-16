@@ -32,3 +32,4 @@
 * [Cow-libi](usaco-silver/cow-libi.md)
 * [Moo Route](usaco-silver/moo-route-1.md)
 * [Milk Sum](usaco-silver/milk-sum.md)
+* [Pareidolia](usaco-silver/pareidolia.md)
