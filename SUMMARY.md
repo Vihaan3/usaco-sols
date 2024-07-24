@@ -33,3 +33,4 @@
 * [Moo Route](usaco-silver/moo-route-1.md)
 * [Milk Sum](usaco-silver/milk-sum.md)
 * [Pareidolia](usaco-silver/pareidolia.md)
+* [Closest Cow Wins](usaco-silver/closest-cow-wins.md)
