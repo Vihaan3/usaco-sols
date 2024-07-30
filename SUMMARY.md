@@ -34,3 +34,6 @@
 * [Milk Sum](usaco-silver/milk-sum.md)
 * [Pareidolia](usaco-silver/pareidolia.md)
 * [Closest Cow Wins](usaco-silver/closest-cow-wins.md)
+* [Maze Tac Toe](usaco-silver/maze-tac-toe.md)
+* [Rectangular Pasture](usaco-silver/rectangular-pasture.md)
+* [Cereal 2](usaco-silver/cereal-2.md)
