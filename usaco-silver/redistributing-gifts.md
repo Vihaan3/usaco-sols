@@ -1,6 +1,6 @@
 # Redistributing Gifts
 
-Attempt 1: Very stupidly, I misread the problem statement as "after _each_ reassignment, every cow ends up with the same gift as she did originally, or a gift that she prefers over the one she was originally assigned" instead of "after reassignment".&#x20;
+Attempt 1: Very stupidly, I misread the problem statement as "after _each_ reassignment, every cow ends up with the same gift as she did originally, or a gift that she prefers over the one she was originally assigned" instead of "after reassignment". This made me approach the problem from the perspective of a sequence of  "trades" that have to strictly be mutually beneficial rather than plain reassignment. &#x20;
 
 ```cpp
 #include <iostream>
