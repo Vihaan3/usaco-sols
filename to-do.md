@@ -1,12 +1,9 @@
----
-description: Vaguely in order
----
-
 # To-Do
 
-* Fully solve and implement every Silver problem from the USACO 2022-2023 season
-  * Come back to [https://usaco.org/index.php?page=viewproblem2\&cpid=1302](https://usaco.org/index.php?page=viewproblem2\&cpid=1302)
-* Come back to the Silver problems from the USACO 2023-2024 season
-  * Brain solve all of them
-  * Implement the hardest ones
-    * Understand the wormhole sort implementation: [http://www.usaco.org/index.php?page=viewproblem2\&cpid=992](http://www.usaco.org/index.php?page=viewproblem2\&cpid=992) and then re-implement it
+* [https://usaco.org/index.php?page=viewproblem2\&cpid=1207](https://usaco.org/index.php?page=viewproblem2\&cpid=1207)
+* [https://usaco.org/index.php?page=viewproblem2\&cpid=1208](https://usaco.org/index.php?page=viewproblem2\&cpid=1208)
+* [http://www.usaco.org/index.php?page=viewproblem2\&cpid=992](http://www.usaco.org/index.php?page=viewproblem2\&cpid=992)
+* [https://usaco.org/index.php?page=viewproblem2\&cpid=1159](https://usaco.org/index.php?page=viewproblem2\&cpid=1159)
+* [http://www.usaco.org/index.php?page=viewproblem2\&cpid=1015](http://www.usaco.org/index.php?page=viewproblem2\&cpid=1015)
+* [http://www.usaco.org/index.php?page=viewproblem2\&cpid=836](http://www.usaco.org/index.php?page=viewproblem2\&cpid=836)
+* [http://www.usaco.org/index.php?page=viewproblem2\&cpid=595](http://www.usaco.org/index.php?page=viewproblem2\&cpid=595)
