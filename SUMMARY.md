@@ -37,3 +37,5 @@
 * [Maze Tac Toe](usaco-silver/maze-tac-toe.md)
 * [Rectangular Pasture](usaco-silver/rectangular-pasture.md)
 * [Cereal 2](usaco-silver/cereal-2.md)
+* [January 2024 Practice Contest](usaco-silver/january-2024-practice-contest.md)
+* [Redistributing Gifts](usaco-silver/redistributing-gifts.md)
