@@ -40,3 +40,4 @@
 * [January 2024 Practice Contest](usaco-silver/january-2024-practice-contest.md)
 * [Redistributing Gifts](usaco-silver/redistributing-gifts.md)
 * [Robot Instructions](usaco-silver/robot-instructions.md)
+* [Email Filing](usaco-silver/email-filing.md)
