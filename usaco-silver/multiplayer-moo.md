@@ -1,6 +1,6 @@
 # Multiplayer Moo
 
-My initial pseudocode (idk if it would've fully worked because I didn't implement it due to how gnarly and complicated I imagine the implementation will be - there is probably some pesky side case I'm missing):
+My initial pseudocode (idk if it would've fully worked because I didn't implement it due to how gnarly and complicated I imagine the implementation will be - there are probably some pesky edge cases I'm missing):
 
 ```
 Go through all cells and set any that aren't connected to 0.
@@ -12,3 +12,5 @@ Return the Max(Max of the connected regions vs (Max of the regions that connect 
 ```
 
 This is definitely not optimized code, but I think it would be easiest to write and fastest to implement this way.&#x20;
+
+The official solution was actually somewhat similar (at least for the beginning). I was basically doing a convoluted flood fill, which is what the official solution recommended. After the flood fill, the official solution compresses regions to single nodes for time efficiency, which is something I hadn't thought of.&#x20;
