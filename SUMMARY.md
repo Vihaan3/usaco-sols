@@ -43,3 +43,4 @@
 * [Email Filing](usaco-silver/email-filing.md)
 * [Triangles](usaco-silver/triangles.md)
 * [Multiplayer Moo](usaco-silver/multiplayer-moo.md)
+* [Subsequences Summing to Sevens](usaco-silver/subsequences-summing-to-sevens.md)

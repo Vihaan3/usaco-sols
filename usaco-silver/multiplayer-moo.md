@@ -1,5 +1,7 @@
 # Multiplayer Moo
 
+{% embed url="https://usaco.org/index.php?page=viewproblem2&cpid=836" %}
+
 My initial pseudocode (idk if it would've fully worked because I didn't implement it due to how gnarly and complicated I imagine the implementation will be - there are probably some pesky edge cases I'm missing):
 
 ```
