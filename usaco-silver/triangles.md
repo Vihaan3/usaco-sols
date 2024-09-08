@@ -2,7 +2,7 @@
 
 {% embed url="http://www.usaco.org/index.php?page=viewproblem2&cpid=1015" %}
 
-This was a hard problem. I think a valuable lesson I learned here was to spend way more time playing with hand-made test cases on the whiteboard, and to spend more time on the whiteboard in general. Every mini-logical-breakthrough that I needed to get to the full solution could've happened if I'd just spent more time figuring it out on the whiteboard instead of staring at a screen and thinking.&#x20;
+This was a hard problem. I think a valuable lesson I learned here was to spend way more time playing with hand-made test cases on the whiteboard, and to spend more time on the whiteboard in general. I would've made every small logical breakthrough that I needed to get to the full solution if I'd just spent more time figuring it out on the whiteboard instead of staring at a screen and thinking.&#x20;
 
 Pseudocode for the final solution:&#x20;
 
