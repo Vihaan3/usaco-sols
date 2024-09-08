@@ -17,7 +17,7 @@ Take input into fences. Update xcoords and ycoords appropriately
 for all positions in x-coords:
     sort all positions along this x-coord
     find the heightsum for the first position naively
-    loop through all the rest and find their heightsums using the recurrence relation
+    loop through all the rest and find their heightsums using the recurrence relation (2i - n)(pos_i+1 - pos_i)
 Ditto for y-coords but with basesum
 Output the sum of (base_sum*height_sum) for each post + all the modification logic
 ```
