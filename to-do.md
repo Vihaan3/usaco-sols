@@ -6,7 +6,6 @@
 
 #### Implement Solution
 
-* [http://www.usaco.org/index.php?page=viewproblem2\&cpid=1015](http://www.usaco.org/index.php?page=viewproblem2\&cpid=1015)
 * [http://www.usaco.org/index.php?page=viewproblem2\&cpid=836](http://www.usaco.org/index.php?page=viewproblem2\&cpid=836)
 * [https://usaco.org/index.php?page=viewproblem2\&cpid=1159](https://usaco.org/index.php?page=viewproblem2\&cpid=1159)
 * [https://usaco.org/index.php?page=viewproblem2\&cpid=1206](https://usaco.org/index.php?page=viewproblem2\&cpid=1206)
