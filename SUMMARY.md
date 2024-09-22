@@ -44,3 +44,4 @@
 * [Triangles](usaco-silver/triangles.md)
 * [Multiplayer Moo](usaco-silver/multiplayer-moo.md)
 * [Subsequences Summing to Sevens](usaco-silver/subsequences-summing-to-sevens.md)
+* [Connecting Two Barns](usaco-silver/connecting-two-barns.md)
