@@ -1,5 +1,7 @@
 # Redistributing Gifts
 
+{% embed url="https://usaco.org/index.php?page=viewproblem2&cpid=1206" %}
+
 Attempt 1: Very stupidly, I misread the problem statement as "after _each_ reassignment, every cow ends up with the same gift as she did originally, or a gift that she prefers over the one she was originally assigned" instead of "after reassignment". This made me approach the problem from the perspective of a sequence of  "trades" that have to strictly be mutually beneficial rather than plain reassignment. &#x20;
 
 ```cpp
@@ -68,5 +70,20 @@ int main()
 }
 ```
 
-\
+Official solution: The official solution is really elegant and simple. The fact that I couldn't figure it out probably points to my severe weakness with graph problems in general.&#x20;
+
+This is the pseudocode for it:&#x20;
+
+```
+Take in input up to the gift that each cow has and ignore the rest
+Loop through each cow:
+    Dfs to find every single cow that this cow connects to 
+        reachable[og_cow][new_cow] = 1 
+Loop through all cows:
+    Loop through the gifts:
+        if (reachable[gift][cow] == 1)
+            print (gift)
+```
+
+Attempt 2: I made the same mistake again over a month later :(. The only reason I was able to catch myself was that I mentally simulated my implementation on a hand-made sample test case before jumping into the implementation and realized that I wasn't doing it right. \
 &#x20;
