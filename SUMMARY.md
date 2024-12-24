@@ -46,3 +46,5 @@
 * [Subsequences Summing to Sevens](usaco-silver/subsequences-summing-to-sevens.md)
 * [Connecting Two Barns](usaco-silver/connecting-two-barns.md)
 * [February 2024 Practice Contest](usaco-silver/february-2024-practice-contest.md)
+* [Cow Frisbee](usaco-silver/cow-frisbee.md)
+* [Cake Game](usaco-silver/cake-game.md)
